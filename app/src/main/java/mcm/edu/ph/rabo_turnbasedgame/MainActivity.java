@@ -15,13 +15,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     ImageButton imageButton6, imageButton7;
+    MediaPlayer music;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MediaPlayer music = MediaPlayer.create(MainActivity.this, R.raw.music);
+        music = MediaPlayer.create(MainActivity.this, R.raw.music);
         music.start();
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
